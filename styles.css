@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Verdana', sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* prevent horizontal scrollbar */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff; /* Or any color you prefer */
+}
+
+.logo a {
+    font-size: 30px; /* Adjust size as needed */
+    font-weight: bold; /* Optional: if you want the logo text to be bold */
+    color: black; /* Match the color to the rest of your header text */
+    text-decoration: none; /* Removes the underline */
+    margin-left: 20px;
+}
+
+.logo a:hover {
+    text-decoration: none; /* Ensures the underline doesn't appear on hover */
+    color: lightblue; /* Keeps the color consistent on hover */
+}
+
+
+.navbar {
+    display: flex;
+    gap: 20px; /* Adjust the gap between nav items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 15px; /* Adjust padding as needed */
+    border-radius: 20px; /* Optional: if you want rounded corners */
+}
+
+.navbar a.resume {
+    background-color: lightblue;
+    color: white;
+    /* Add any other styles for the resume button */
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 25px;
+
+}
+
+.about-me {
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0; 
+    padding: 20px; 
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto; /* Center the image horizontally */
+}
+
+.about-me h2 {
+    margin: 0px; /* Adjust margin to your liking */
+    font-size: 32px;
+}
+
+.software h3 {
+    margin: 0.5rem 0; /* Adjust margin to your liking */
+    font-size: 25px;
+}
+
+.university a {
+    color: black;
+    text-decoration: none;
+}
+
+.university a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 40px;
+    color: black;
+    font-size: 30px;
+}
+
+.social-icon:hover {
+    color: #555;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-me h2 {
+        font-size: 1.5rem;
+    }
+}
